@@ -3,416 +3,429 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<meta name="theme-color" content="#08160d"/>
-<title>Faraj Agri Trading — Agricultural Products & Field Projects</title>
-<meta name="description" content="Premium agricultural products and field project support. Fertilizers, seeds, crop protection, and specialist support for grapes, potatoes, and vegetables."/>
+<meta name="theme-color" content="#16301f"/>
+<title>Faraj Agri Trading — Agricultural Products & Field Project Portfolio</title>
+<meta name="description" content="Faraj Agri Trading — quality fertilizers, seeds, agricultural medicines and crop protection, with field project support for grapes, potatoes and vegetables."/>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin/>
 <link rel="stylesheet" href="styles.css"/>
-<!-- GSAP for cinema-grade scroll animations -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 </head>
 <body>
 
-<!-- Custom Cursor -->
-<div class="cur-dot" id="curDot" aria-hidden="true"></div>
-<div class="cur-ring" id="curRing" aria-hidden="true"></div>
+<!-- ===== HEADER / NAVBAR ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Faraj Agri Trading — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">Faraj<em>Agri Trading</em></span>
+    </a>
 
-<!-- ===== NAV ===== -->
-<nav class="nav" id="nav">
-  <a href="#hero" class="brand" aria-label="Faraj Agri Trading">
-    <span class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="#08160d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </span>
-    <span>Faraj<span class="brand-sub">Agri Trading</span></span>
-  </a>
-  <div class="nav-links" id="navLinks">
-    <a href="#products">Products</a>
-    <a href="#finder">Find Solution</a>
-    <a href="#projects">Projects</a>
-    <a href="#timeline">Process</a>
-    <a href="#knowledge">Knowledge</a>
-    <a href="#contact" class="btn">Contact</a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#projects">Projects</a>
+      <a href="#finder">Solution Finder</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#advice">Advice</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/0000000000?text=Hello%20Faraj%20Agri%20Trading" target="_blank" rel="noopener" class="btn btn-sm nav-cta">Get in Touch</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+</header>
 
 <!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+<section class="hero" id="home">
+  <div class="hero-bg" id="heroBg" aria-hidden="true">
+    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80"></div>
+    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1920&q=80"></div>
+    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=80"></div>
+    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=1920&q=80"></div>
+  </div>
   <div class="hero-overlay" aria-hidden="true"></div>
 
-  <div class="wrap hero-content">
-    <div class="hero-grid">
-      <div class="hero-left">
-        <div class="hero-tag">
-          <span class="dot" aria-hidden="true"></span>
-          Agricultural Products &amp; Field Projects
-        </div>
-        <h1 class="h-hero">
-          <span class="line"><span>Faraj</span></span>
-          <span class="line"><span>Agri</span></span>
-          <span class="line"><span class="hero-accent">Trading</span></span>
-        </h1>
-        <p class="hero-lead">Quality agricultural products and field project support for better yields and sustainable farming.</p>
-        <div class="hero-actions">
-          <a href="#products" class="btn btn-lg">Explore Products <span class="arr">→</span></a>
-          <a href="#projects" class="btn btn-lg btn-ghost">View Projects</a>
-        </div>
-      </div>
+  <div class="hero-content wrap">
+    <span class="hero-eyebrow reveal">
+      <span class="dot" aria-hidden="true"></span> Agricultural Products &amp; Field Projects
+    </span>
+    <h1 class="hero-title reveal" data-d="1">Faraj Agri Trading</h1>
+    <p class="hero-sub reveal" data-d="2">Agricultural Products &amp; Field Project Portfolio</p>
+    <p class="hero-desc reveal" data-d="3">Quality agricultural products and field project support for better yields and sustainable farming.</p>
+    <div class="hero-actions reveal" data-d="4">
+      <a href="#products" class="btn btn-lg">Explore Products <span class="arr">→</span></a>
+      <a href="#projects" class="btn btn-lg btn-ghost">View Projects</a>
+    </div>
 
-      <div class="hero-cards" aria-label="Product highlights">
-        <div class="hcard">
-          <span class="hcard-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </span>
-          <div><div class="hcard-name">Fertilizers</div><div class="hcard-sub">Soil &amp; crop nutrition</div></div>
-        </div>
-        <div class="hcard">
-          <span class="hcard-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-11a8 8 0 1 0-16 0c0 5 3 9 8 11Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </span>
-          <div><div class="hcard-name">Seeds</div><div class="hcard-sub">Certified varieties</div></div>
-        </div>
-        <div class="hcard">
-          <span class="hcard-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l-1 4h-4L9 3Zm-2 7h10l-1 11H8L7 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </span>
-          <div><div class="hcard-name">Crop Protection</div><div class="hcard-sub">Safe, reliable yields</div></div>
-        </div>
-        <div class="hcard">
-          <span class="hcard-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M3 20h18M5 20v-6m4 6V9m4 11v-8m4 8v-5M5 14l4-5 4 3 4-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div><div class="hcard-name">Field Projects</div><div class="hcard-sub">Grapes · Potatoes · Veg</div></div>
-        </div>
+    <div class="hero-highlights reveal" data-d="5">
+      <div class="hl">
+        <span class="hl-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+        <span>Fertilizers</span>
+      </div>
+      <div class="hl">
+        <span class="hl-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-11a8 8 0 1 0-16 0c0 5 3 9 8 11Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 9v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+        <span>Seeds</span>
+      </div>
+      <div class="hl">
+        <span class="hl-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l-1 4h-4L9 3Zm-2 7h10l-1 11H8L7 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+        <span>Crop Protection</span>
+      </div>
+      <div class="hl">
+        <span class="hl-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 20h18M5 20v-6m4 6V9m4 11v-8m4 8v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        <span>Field Projects</span>
       </div>
     </div>
   </div>
 
-  <div class="hero-scroll" aria-hidden="true">
-    <span>Scroll</span>
-    <span class="line"></span>
-  </div>
+  <a href="#products" class="hero-scroll" aria-label="Scroll to products">
+    <span>Scroll</span><span class="hero-scroll-line" aria-hidden="true"></span>
+  </a>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="sec bg-cream" id="about">
+<!-- ===== PRODUCTS PORTFOLIO ===== -->
+<section class="section sec-cream" id="products">
   <div class="wrap">
-    <div class="about-grid">
-      <div class="soil-vis reveal-l" id="soilVis" aria-hidden="true">
-        <div class="soil-band" style="top:0;height:30%;background:linear-gradient(180deg,#7a9a50,#5a7832);align-items:flex-end;padding-bottom:14px;"><span>Crop Canopy</span></div>
-        <div class="soil-band" style="top:30%;height:23%;background:linear-gradient(180deg,#6b4a2c,#4a3320);align-items:center;"><span>Topsoil · Nutrients</span></div>
-        <div class="soil-band" style="top:53%;height:22%;background:linear-gradient(180deg,#4a3320,#2c1d12);align-items:center;"><span>Root Zone</span></div>
-        <div class="soil-band" style="top:75%;height:25%;background:linear-gradient(180deg,#2c1d12,#18100a);align-items:center;"><span>Subsoil · Water</span></div>
-        <div class="soil-sprout" aria-hidden="true">
-          <svg width="52" height="68" viewBox="0 0 52 68" fill="none"><path d="M26 66V24" stroke="#3a5a2a" stroke-width="3" stroke-linecap="round"/><path d="M26 33C18 33 9 29 7 20c9-1 15 3 19 13Z" fill="#5a8a3a"/><path d="M26 27c2-9 10-13 18-12-2 9-10 13-18 12Z" fill="#6f9a45"/></svg>
-        </div>
-      </div>
-      <div class="about-text reveal">
-        <span class="eyebrow">From Soil to Business</span>
-        <p class="statement">From agricultural inputs to field project support, <strong>Faraj Agri Trading</strong> helps farmers build stronger, healthier, and more productive crops.</p>
-        <div class="stats-row">
-          <div><div class="stat-val" data-count="4">0</div><div class="stat-lab">Product Lines</div></div>
-          <div><div class="stat-val" data-count="3">0</div><div class="stat-lab">Project Crops</div></div>
-          <div><div class="stat-val" data-count="100" data-suffix="%">0%</div><div class="stat-lab">Field-Tested</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <header class="sec-head reveal">
+      <span class="eyebrow">Products Portfolio</span>
+      <h2>Quality Inputs. Better Results.</h2>
+      <p class="sec-lead">A focused range of agricultural inputs — selected and proven in the field.</p>
+    </header>
 
-<!-- ===== PRODUCTS — Horizontal Scroll ===== -->
-<div class="prod-pin" id="prodPin">
-  <div class="prod-sticky" id="prodSticky">
-    <div class="prod-track" id="prodTrack">
-
-      <div class="prod-intro-panel">
-        <span class="eyebrow">Products Portfolio</span>
-        <h2 class="h-lg">Everything<br/>the crop<br/>needs</h2>
-        <p class="lead" style="margin-top:.8em;font-size:.95rem">A focused range of agricultural inputs — field-selected, field-proven.</p>
-      </div>
-
-      <article class="prod-card" id="products" data-scene="rows" tabindex="0">
-        <div class="stage-wrap"><canvas class="scene-canvas" data-type="rows"></canvas></div>
-        <div class="pc-overlay"></div>
-        <div class="pc-body">
-          <span class="pc-tag">Core Line</span>
-          <span class="pc-num">01 / Nutrition</span>
+    <div class="prod-grid">
+      <article class="prod-card feature reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body">
+          <span class="card-tag">Core Line</span>
           <h3>Fertilizers</h3>
-          <p>Balanced soil and crop nutrition for stronger root systems and higher yields.</p>
-          <span class="pc-cta">Explore range <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p>Balanced soil and crop nutrition for stronger roots and higher yields.</p>
+          <span class="card-cta">Explore range <span class="arr">→</span></span>
         </div>
       </article>
 
-      <article class="prod-card" data-scene="vine" tabindex="0">
-        <div class="stage-wrap"><canvas class="scene-canvas" data-type="vine"></canvas></div>
-        <div class="pc-overlay"></div>
-        <div class="pc-body">
-          <span class="pc-num">02 / Genetics</span>
+      <article class="prod-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body">
           <h3>Seeds</h3>
-          <p>Certified, high-germination varieties matched to local growing conditions.</p>
-          <span class="pc-cta">Explore range <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p>Certified, high-germination varieties for local conditions.</p>
+          <span class="card-cta">Explore <span class="arr">→</span></span>
         </div>
       </article>
 
-      <article class="prod-card" data-scene="spray" tabindex="0">
-        <div class="stage-wrap"><canvas class="scene-canvas" data-type="spray"></canvas></div>
-        <div class="pc-overlay"></div>
-        <div class="pc-body">
-          <span class="pc-num">03 / Treatment</span>
+      <article class="prod-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?auto=format&fit=crop&w=900&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body">
           <h3>Agricultural Medicines</h3>
-          <p>Targeted crop treatments that protect plant health through the full season.</p>
-          <span class="pc-cta">Explore range <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p>Targeted treatments that protect plant health all season.</p>
+          <span class="card-cta">Explore <span class="arr">→</span></span>
         </div>
       </article>
 
-      <article class="prod-card" data-scene="map" tabindex="0">
-        <div class="stage-wrap"><canvas class="scene-canvas" data-type="map"></canvas></div>
-        <div class="pc-overlay"></div>
-        <div class="pc-body">
-          <span class="pc-tag">Field-Proven</span>
-          <span class="pc-num">04 / Defense</span>
+      <article class="prod-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body">
           <h3>Crop Protection</h3>
-          <p>Protect yield from pests, weeds, and disease with reliable solutions.</p>
-          <span class="pc-cta">Explore range <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p>Reliable defense against pests, weeds and disease.</p>
+          <span class="card-cta">Explore <span class="arr">→</span></span>
         </div>
       </article>
-
-    </div>
-  </div>
-</div>
-
-<!-- ===== FINDER ===== -->
-<section class="sec bg-dark" id="finder">
-  <div class="wrap">
-    <div class="sec-intro reveal">
-      <span class="eyebrow">Interactive Tool</span>
-      <h2 class="h-lg">Find the right solution</h2>
-      <p class="lead">Select your crop and need — we'll show the right products.</p>
-    </div>
-    <div class="finder-box reveal-scale">
-      <div class="finder-top">
-        <div class="filter-row" style="margin-bottom:20px">
-          <span class="flabel">Crop</span>
-          <div id="cropChips">
-            <button class="chip on" data-crop="grapes"><span class="cdot"></span>Grapes</button>
-            <button class="chip" data-crop="potatoes"><span class="cdot"></span>Potatoes</button>
-            <button class="chip" data-crop="vegetables"><span class="cdot"></span>Vegetables</button>
-          </div>
-        </div>
-        <div class="filter-row">
-          <span class="flabel">Need</span>
-          <div id="needChips">
-            <button class="chip on" data-need="fertilizer"><span class="cdot"></span>Fertilizer</button>
-            <button class="chip" data-need="seeds"><span class="cdot"></span>Seeds</button>
-            <button class="chip" data-need="protection"><span class="cdot"></span>Protection</button>
-            <button class="chip" data-need="treatment"><span class="cdot"></span>Treatment</button>
-          </div>
-        </div>
-      </div>
-      <div class="finder-bottom">
-        <div class="finder-results" id="finderResults" aria-live="polite"></div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PROJECTS ===== -->
-<section class="sec bg-forest" id="projects">
+<!-- ===== SOLUTION FINDER ===== -->
+<section class="section sec-forest" id="finder">
   <div class="wrap">
-    <div class="sec-intro reveal">
+    <header class="sec-head reveal">
+      <span class="eyebrow light">Interactive Tool</span>
+      <h2>Find the Right Agricultural Solution</h2>
+      <p class="sec-lead light">Select your crop and your need — we'll match the right support.</p>
+    </header>
+
+    <div class="finder reveal">
+      <div class="finder-controls">
+        <div class="finder-row">
+          <span class="finder-label">Crop Type</span>
+          <div class="chips" id="cropChips">
+            <button class="chip on" data-crop="grapes">Grapes</button>
+            <button class="chip" data-crop="potatoes">Potatoes</button>
+            <button class="chip" data-crop="vegetables">Vegetables</button>
+          </div>
+        </div>
+        <div class="finder-row">
+          <span class="finder-label">Need</span>
+          <div class="chips" id="needChips">
+            <button class="chip on" data-need="fertilizer">Fertilizer</button>
+            <button class="chip" data-need="seeds">Seeds</button>
+            <button class="chip" data-need="protection">Crop Protection</button>
+            <button class="chip" data-need="treatment">Treatment</button>
+          </div>
+        </div>
+      </div>
+      <div class="finder-result" id="finderResult" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS PORTFOLIO ===== -->
+<section class="section sec-cream" id="projects">
+  <div class="wrap">
+    <header class="sec-head reveal">
       <span class="eyebrow">Field Project Portfolio</span>
-      <h2 class="h-lg">Crops we help grow</h2>
-      <p class="lead">Real support from soil preparation to harvest.</p>
-    </div>
+      <h2>Field Projects. Real Impact.</h2>
+      <p class="sec-lead">Support from soil preparation through to harvest.</p>
+    </header>
+
     <div class="proj-grid">
-
-      <article class="proj-card" tabindex="0">
-        <div class="pc-bg stage-wrap"><canvas class="scene-canvas" data-type="vine"></canvas></div>
-        <div class="proj-badge-row"><span class="proj-badge">Vineyard</span><span class="proj-status">Active Support</span></div>
-        <h3>Grapes</h3>
-        <p class="proj-desc">Nutrition and protection programs for clean, high-quality grape harvests.</p>
-        <div class="proj-meta">
-          <div class="proj-mi"><b>3</b>Seasons</div>
-          <div class="proj-mi"><b>Full</b>Cycle</div>
+      <article class="proj-card reveal" tabindex="0">
+        <div class="proj-bg rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1438118907704-7718ee9a191a?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1474919251056-9f0e75d36e5d?auto=format&fit=crop&w=1000&q=80"></div>
         </div>
-        <button class="proj-btn">View Project Support →</button>
+        <div class="proj-shade"></div>
+        <div class="proj-body">
+          <span class="proj-badge">Vineyard</span>
+          <h3>Grapes Projects</h3>
+          <p>Nutrition and protection programs for clean, high-quality harvests.</p>
+          <button class="proj-btn">View Project Support <span class="arr">→</span></button>
+        </div>
       </article>
 
-      <article class="proj-card" tabindex="0">
-        <div class="pc-bg stage-wrap"><canvas class="scene-canvas" data-type="rows"></canvas></div>
-        <div class="proj-badge-row"><span class="proj-badge">Root Crop</span><span class="proj-status">Active Support</span></div>
-        <h3>Potatoes</h3>
-        <p class="proj-desc">Soil-focused programs for healthy tubers and strong seasonal yields.</p>
-        <div class="proj-meta">
-          <div class="proj-mi"><b>2</b>Cycles</div>
-          <div class="proj-mi"><b>Field</b>Tested</div>
+      <article class="proj-card reveal" tabindex="0">
+        <div class="proj-bg rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=1000&q=80"></div>
         </div>
-        <button class="proj-btn">View Project Support →</button>
+        <div class="proj-shade"></div>
+        <div class="proj-body">
+          <span class="proj-badge">Root Crop</span>
+          <h3>Potatoes Projects</h3>
+          <p>Soil-focused programs for healthy tubers and strong yields.</p>
+          <button class="proj-btn">View Project Support <span class="arr">→</span></button>
+        </div>
       </article>
 
-      <article class="proj-card" tabindex="0">
-        <div class="pc-bg stage-wrap"><canvas class="scene-canvas" data-type="map"></canvas></div>
-        <div class="proj-badge-row"><span class="proj-badge">Mixed Beds</span><span class="proj-status">Active Support</span></div>
-        <h3>Vegetables</h3>
-        <p class="proj-desc">Season-long programs for fresh, market-ready vegetable production.</p>
-        <div class="proj-meta">
-          <div class="proj-mi"><b>Multi</b>Crop</div>
-          <div class="proj-mi"><b>Year</b>Round</div>
+      <article class="proj-card reveal" tabindex="0">
+        <div class="proj-bg rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1000&q=80"></div>
         </div>
-        <button class="proj-btn">View Project Support →</button>
+        <div class="proj-shade"></div>
+        <div class="proj-body">
+          <span class="proj-badge">Mixed Beds</span>
+          <h3>Vegetables Projects</h3>
+          <p>Season-long programs for fresh, market-ready vegetables.</p>
+          <button class="proj-btn">View Project Support <span class="arr">→</span></button>
+        </div>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- ===== GALLERY ===== -->
-<section class="sec bg-deep" id="gallery">
+<!-- ===== PORTFOLIO GALLERY ===== -->
+<section class="section sec-deep" id="portfolio">
   <div class="wrap">
-    <div class="sec-intro reveal">
-      <span class="eyebrow">From the Field</span>
-      <h2 class="h-lg">A living portfolio</h2>
-    </div>
-    <div class="gallery-wrap">
-      <div class="g-tile wide tall"><canvas class="scene-canvas" data-type="rows"></canvas><span class="g-label">Aerial Crop Rows</span></div>
-      <div class="g-tile"><canvas class="scene-canvas" data-type="vine"></canvas><span class="g-label">Vineyards</span></div>
-      <div class="g-tile"><canvas class="scene-canvas" data-type="soil"></canvas><span class="g-label">Living Soil</span></div>
-      <div class="g-tile"><canvas class="scene-canvas" data-type="harvest"></canvas><span class="g-label">Harvest</span></div>
-      <div class="g-tile"><canvas class="scene-canvas" data-type="spray"></canvas><span class="g-label">Crop Protection</span></div>
-      <div class="g-tile wide"><canvas class="scene-canvas" data-type="map"></canvas><span class="g-label">Field Mapping</span></div>
-      <div class="g-tile"><canvas class="scene-canvas" data-type="harvest"></canvas><span class="g-label">Yield</span></div>
+    <header class="sec-head reveal">
+      <span class="eyebrow light">From the Field</span>
+      <h2>Real Fields. Real Work.</h2>
+    </header>
+
+    <div class="gallery">
+      <figure class="g-tile wide reveal">
+        <div class="rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80"></div>
+        </div>
+        <figcaption>Aerial Crop Rows</figcaption>
+      </figure>
+      <figure class="g-tile reveal">
+        <div class="rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1438118907704-7718ee9a191a?auto=format&fit=crop&w=800&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80"></div>
+        </div>
+        <figcaption>Vineyards</figcaption>
+      </figure>
+      <figure class="g-tile reveal">
+        <div class="rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80"></div>
+        </div>
+        <figcaption>Living Soil</figcaption>
+      </figure>
+      <figure class="g-tile reveal">
+        <div class="rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=800&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?auto=format&fit=crop&w=800&q=80"></div>
+        </div>
+        <figcaption>Crop Protection</figcaption>
+      </figure>
+      <figure class="g-tile wide reveal">
+        <div class="rot">
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=1200&q=80"></div>
+          <div class="rot-slide" data-bg="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1200&q=80"></div>
+        </div>
+        <figcaption>Harvest Season</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <!-- ===== TIMELINE ===== -->
-<section class="sec bg-forest" id="timeline">
+<section class="section sec-forest" id="timeline">
   <div class="wrap">
-    <div class="sec-intro reveal">
-      <span class="eyebrow">From Soil to Harvest</span>
-      <h2 class="h-lg">How we support a crop</h2>
-      <p class="lead">A structured, field-proven process from the first seed to the final yield.</p>
-    </div>
-    <div class="tl-wrap" id="tlWrap">
-      <div class="tl-line"></div>
-      <div class="tl-fill" id="tlFill"></div>
+    <header class="sec-head reveal">
+      <span class="eyebrow light">Our Process</span>
+      <h2>From Soil to Harvest</h2>
+      <p class="sec-lead light">A structured, field-proven process from the first seed to the final yield.</p>
+    </header>
 
-      <div class="tstep"><div class="t-node"><div class="t-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M3 18h18M5 18l2-6h10l2 6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><span class="t-num">01</span></div><div class="t-body"><h4>Soil Preparation</h4><p>Assess soil condition and set the nutrition base before planting begins.</p></div></div>
-
-      <div class="tstep"><div class="t-node"><div class="t-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-11a8 8 0 1 0-16 0c0 5 3 9 8 11Z" stroke="currentColor" stroke-width="1.8"/></svg></div><span class="t-num">02</span></div><div class="t-body"><h4>Product Selection</h4><p>Match seeds and fertilizers precisely to crop type and local field conditions.</p></div></div>
-
-      <div class="tstep"><div class="t-node"><div class="t-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l-1 4h-4L9 3Zm-2 7h10l-1 11H8L7 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><span class="t-num">03</span></div><div class="t-body"><h4>Crop Protection</h4><p>Strategic protection against pests, weeds, and disease at the right moment.</p></div></div>
-
-      <div class="tstep"><div class="t-node"><div class="t-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 4-6 5 4M3 21h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="t-num">04</span></div><div class="t-body"><h4>Growth Monitoring</h4><p>Track crop health throughout the season and adjust the program as needed.</p></div></div>
-
-      <div class="tstep"><div class="t-node"><div class="t-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0c-3 0-6-2-7-5 3-1 6 1 7 5Zm0 0c1-4 4-6 7-5-1 3-4 5-7 5ZM6 21h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="t-num">05</span></div><div class="t-body"><h4>Harvest Support</h4><p>Bring the crop to a clean, productive harvest with the right finishing inputs.</p></div></div>
+    <div class="timeline" id="timeline-steps">
+      <div class="tl-track"><div class="tl-fill" id="tlFill"></div></div>
+      <div class="tl-step">
+        <div class="tl-node"><svg viewBox="0 0 24 24" fill="none"><path d="M3 18h18M5 18l2-6h10l2 6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <div class="tl-text"><span class="tl-num">01</span><h4>Soil Preparation</h4><p>Assess soil condition and set the nutrition base before planting.</p></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-node"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-11a8 8 0 1 0-16 0c0 5 3 9 8 11Z" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <div class="tl-text"><span class="tl-num">02</span><h4>Product Selection</h4><p>Match seeds and fertilizers to crop type and field conditions.</p></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-node"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l-1 4h-4L9 3Zm-2 7h10l-1 11H8L7 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <div class="tl-text"><span class="tl-num">03</span><h4>Crop Protection</h4><p>Strategic protection against pests, weeds and disease.</p></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-node"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 4-6 5 4M3 21h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tl-text"><span class="tl-num">04</span><h4>Growth Monitoring</h4><p>Track crop health through the season and adjust the program.</p></div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-node"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0c-3 0-6-2-7-5 3-1 6 1 7 5Zm0 0c1-4 4-6 7-5-1 3-4 5-7 5ZM6 21h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tl-text"><span class="tl-num">05</span><h4>Harvest Support</h4><p>Bring the crop to a clean, productive harvest.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== WHY ===== -->
-<section class="sec bg-deep">
+<section class="section sec-cream" id="why">
   <div class="wrap">
-    <div class="sec-intro reveal">
+    <header class="sec-head reveal">
       <span class="eyebrow">Why Faraj Agri Trading</span>
-      <h2 class="h-lg">Built around the farmer</h2>
-    </div>
+      <h2>Built on Trust. Focused on Growth.</h2>
+    </header>
     <div class="why-grid">
-      <div class="why-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Reliable Products</h4><p>A consistent, field-tested product range you can depend on.</p></div>
-      <div class="why-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h4>Field Experience</h4><p>Knowledge earned from real farms, real seasons, real results.</p></div>
-      <div class="why-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Farmer Support</h4><p>Guidance that stays with you from planting day to harvest.</p></div>
-      <div class="why-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h4>Crop-Focused</h4><p>Solutions designed around the specific needs of each crop type.</p></div>
-      <div class="why-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm0 0v20M2 12h20" stroke="currentColor" stroke-width="1.4"/></svg></div><h4>Local Knowledge</h4><p>Deeply rooted in local growing conditions and seasonal rhythms.</p></div>
+      <div class="why-card reveal"><span class="why-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h4>Reliable Products</h4><p>A consistent, field-tested range you can depend on.</p></div>
+      <div class="why-card reveal"><span class="why-ico"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><h4>Field Experience</h4><p>Knowledge earned from real farms and real seasons.</p></div>
+      <div class="why-card reveal"><span class="why-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z" stroke="currentColor" stroke-width="1.6"/></svg></span><h4>Farmer Support</h4><p>Guidance that stays with you from planting to harvest.</p></div>
+      <div class="why-card reveal"><span class="why-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><h4>Crop-Focused</h4><p>Solutions designed around each crop's real needs.</p></div>
+      <div class="why-card reveal"><span class="why-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm0 0v20M2 12h20" stroke="currentColor" stroke-width="1.4"/></svg></span><h4>Local Knowledge</h4><p>Rooted in local growing conditions and seasons.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== KNOWLEDGE ===== -->
-<section class="sec bg-forest" id="knowledge">
+<!-- ===== ADVICE ===== -->
+<section class="section sec-deep" id="advice">
   <div class="wrap">
-    <div class="sec-intro reveal">
-      <span class="eyebrow">Knowledge Center</span>
-      <h2 class="h-lg">Agricultural advice</h2>
-      <p class="lead">Practical insight for every stage of the farming season.</p>
-    </div>
-    <div class="know-grid">
-      <article class="k-card" tabindex="0"><div class="kc-bg stage-wrap"><canvas class="scene-canvas" data-type="harvest"></canvas></div><span class="k-tag">Seasonal</span><h4>Seasonal Crop Tips</h4><p>Right action at the right time of year for every crop.</p><span class="k-more">Read more →</span></article>
-      <article class="k-card" tabindex="0"><div class="kc-bg stage-wrap"><canvas class="scene-canvas" data-type="soil"></canvas></div><span class="k-tag">Nutrition</span><h4>Fertilizer Guidance</h4><p>Feed both soil and crop the smart way for stronger growth.</p><span class="k-more">Read more →</span></article>
-      <article class="k-card" tabindex="0"><div class="kc-bg stage-wrap"><canvas class="scene-canvas" data-type="spray"></canvas></div><span class="k-tag">Protection</span><h4>Crop Protection</h4><p>Stay ahead of pests and disease with practical strategies.</p><span class="k-more">Read more →</span></article>
-      <article class="k-card" tabindex="0"><div class="kc-bg stage-wrap"><canvas class="scene-canvas" data-type="map"></canvas></div><span class="k-tag">Projects</span><h4>Field Project Insights</h4><p>Plan and manage stronger agricultural field projects.</p><span class="k-more">Read more →</span></article>
+    <header class="sec-head reveal">
+      <span class="eyebrow light">Knowledge Center</span>
+      <h2>Knowledge for Better Farming</h2>
+    </header>
+    <div class="advice-grid">
+      <article class="adv-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body"><span class="card-tag">Seasonal</span><h4>Seasonal Crop Tips</h4><p>Right action at the right time of year.</p></div>
+      </article>
+      <article class="adv-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body"><span class="card-tag">Nutrition</span><h4>Fertilizer Guidance</h4><p>Feed both soil and crop the smart way.</p></div>
+      </article>
+      <article class="adv-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=800&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body"><span class="card-tag">Protection</span><h4>Crop Protection</h4><p>Stay ahead of pests and disease.</p></div>
+      </article>
+      <article class="adv-card reveal" tabindex="0">
+        <div class="card-img" data-bg="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80"></div>
+        <div class="card-shade"></div>
+        <div class="card-body"><span class="card-tag">Projects</span><h4>Field Project Insights</h4><p>Plan and manage stronger field projects.</p></div>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section class="sec bg-deep" id="contact">
+<section class="section sec-forest" id="contact">
   <div class="wrap">
-    <div class="sec-intro reveal">
-      <span class="eyebrow">Get in Touch</span>
-      <h2 class="h-lg">Let's grow something</h2>
-      <p class="lead">Need agricultural products or project support? Contact Faraj Agri Trading today.</p>
-    </div>
-    <div class="contact-layout">
-      <div class="reveal-l">
-        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5l9 7 9-7M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><div class="c-lab">Email</div><div class="c-val">info@farajagri.com</div></div></div>
-        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 3 3 5 6 6l2-3 5 2v4c0 1-1 2-2 2A16 16 0 0 1 3 6c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><div class="c-lab">Phone / WhatsApp</div><div class="c-val">+000 00 000 000</div></div></div>
-        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5 7-11a7 7 0 1 0-14 0c0 6 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></span><div><div class="c-lab">Location</div><div class="c-val">Service area — on request</div></div></div>
-        <div class="wa-row">
-          <a href="https://wa.me/0000000000?text=Hello%20Faraj%20Agri%20Trading" target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-lg btn-block">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
-            Chat on WhatsApp
-          </a>
+    <header class="sec-head reveal">
+      <span class="eyebrow light">Get in Touch</span>
+      <h2>Need products or project support?</h2>
+      <p class="sec-lead light">Contact Faraj Agri Trading — we'll respond within one business day.</p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="https://wa.me/0000000000?text=Hello%20Faraj%20Agri%20Trading" target="_blank" rel="noopener" class="btn btn-wa btn-lg btn-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 3 3 5 6 6l2-3 5 2v4c0 1-1 2-2 2A16 16 0 0 1 3 6c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><span class="c-lab">Phone</span><span class="c-val">+000 00 000 000</span></div></div>
+        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5l9 7 9-7M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><span class="c-lab">Email</span><span class="c-val">info@farajagri.com</span></div></div>
+        <div class="c-item"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5 7-11a7 7 0 1 0-14 0c0 6 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></span><div><span class="c-lab">Location</span><span class="c-val">Service area — on request</span></div></div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field"><label for="cn">Your Name</label><input id="cn" name="name" type="text" placeholder="Full name" required/></div>
+        <div class="field"><label for="cp">Phone / WhatsApp</label><input id="cp" name="phone" type="tel" placeholder="+000 00 000 000"/></div>
+        <div class="field"><label for="cs">I'm interested in</label>
+          <select id="cs" name="subject">
+            <option>Fertilizers</option><option>Seeds</option><option>Agricultural Medicines</option><option>Crop Protection</option>
+            <option>Grapes Project Support</option><option>Potatoes Project Support</option><option>Vegetables Project Support</option><option>General Enquiry</option>
+          </select>
         </div>
-      </div>
-      <div class="reveal">
-        <form class="cform" id="contactForm" novalidate>
-          <div class="field"><label for="fn">Your Name</label><input id="fn" name="name" type="text" placeholder="Full name" required/></div>
-          <div class="field"><label for="fp">Phone / WhatsApp</label><input id="fp" name="phone" type="tel" placeholder="+000 00 000 000"/></div>
-          <div class="field"><label for="fs">I'm interested in</label>
-            <select id="fs" name="subject"><option>Fertilizers</option><option>Seeds</option><option>Agricultural Medicines</option><option>Crop Protection</option><option>Grapes Project Support</option><option>Potatoes Project Support</option><option>Vegetables Project Support</option><option>General Enquiry</option></select>
-          </div>
-          <div class="field"><label for="fm">Message</label><textarea id="fm" name="message" placeholder="Tell us what you need…"></textarea></div>
-          <button type="submit" class="btn btn-lg btn-block">Send Enquiry <span class="arr">→</span></button>
-          <p class="form-note">We'll respond within one business day.</p>
-          <div class="form-ok" id="formOk" role="status">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Message sent — we'll be in touch shortly.
-          </div>
-        </form>
-      </div>
+        <div class="field"><label for="cm">Message</label><textarea id="cm" name="message" placeholder="Tell us what you need…"></textarea></div>
+        <button type="submit" class="btn btn-lg btn-block">Send Enquiry <span class="arr">→</span></button>
+        <div class="form-ok" id="formOk" role="status"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Message sent — we'll be in touch shortly.</div>
+      </form>
     </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-  <div class="wrap">
-    <div class="footer-main">
-      <div>
-        <a href="#hero" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="#08160d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Faraj<span class="brand-sub">Agri Trading</span></span></a>
-        <p class="footer-brand-desc">Agricultural products and field project support for stronger, more productive farming.</p>
-      </div>
-      <nav class="footer-nav">
-        <div class="footer-col"><b>Products</b><a href="#products">Fertilizers</a><a href="#products">Seeds</a><a href="#products">Agricultural Medicines</a><a href="#products">Crop Protection</a></div>
-        <div class="footer-col"><b>Projects</b><a href="#projects">Grapes</a><a href="#projects">Potatoes</a><a href="#projects">Vegetables</a></div>
-        <div class="footer-col"><b>Company</b><a href="#about">About</a><a href="#knowledge">Knowledge</a><a href="#timeline">Process</a><a href="#contact">Contact</a></div>
-      </nav>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22c0-6 0-9 4-13M12 22c0-6 0-9-4-13M12 13C12 7 9 4 4 4c0 6 3 9 8 9Zm0 0c0-6 3-9 8-9 0 6-3 9-8 9Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="brand-text">Faraj<em>Agri Trading</em></span>
+      </a>
+      <p>Agricultural products and field project support for stronger, more productive farming.</p>
     </div>
-    <div class="footer-base">
-      <span>© 2026 Faraj Agri Trading. All rights reserved.</span>
-      <a href="#contact">info@farajagri.com</a>
-    </div>
+    <nav class="footer-cols" aria-label="Footer">
+      <div><b>Products</b><a href="#products">Fertilizers</a><a href="#products">Seeds</a><a href="#products">Agricultural Medicines</a><a href="#products">Crop Protection</a></div>
+      <div><b>Projects</b><a href="#projects">Grapes</a><a href="#projects">Potatoes</a><a href="#projects">Vegetables</a></div>
+      <div><b>Company</b><a href="#finder">Solution Finder</a><a href="#advice">Advice</a><a href="#timeline">Process</a><a href="#contact">Contact</a></div>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 Faraj Agri Trading. All rights reserved.</span>
+    <a href="mailto:info@farajagri.com">info@farajagri.com</a>
   </div>
 </footer>
 
-<!-- WhatsApp Float -->
-<a href="https://wa.me/0000000000?text=Hello%20Faraj%20Agri%20Trading" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/0000000000?text=Hello%20Faraj%20Agri%20Trading" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="white"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
 </a>
-<span class="wa-tip" aria-hidden="true">Chat on WhatsApp</span>
 
 <script src="script.js"></script>
 </body>
